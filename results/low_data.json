@@ -1,0 +1,139 @@
+{
+  "description": "Synthetic two-marker spatial relation, independent PyTorch educational benchmark",
+  "not_a_replication_of_original_paper": true,
+  "configuration": {
+    "seeds": 3,
+    "steps": 150,
+    "train_count": 120,
+    "eval_count": 128,
+    "variants": [
+      "cnn",
+      "vit4"
+    ],
+    "device": "cpu"
+  },
+  "runs": [
+    {
+      "name": "cnn",
+      "seed": 0,
+      "steps": 150,
+      "train_count": 120,
+      "parameters": 166562,
+      "patch_tokens": null,
+      "train_seconds": 2.4275218440000117,
+      "clean_accuracy": 1.0,
+      "noisy_accuracy": 0.984375,
+      "shifted_accuracy": 1.0,
+      "clean_ce": 5.358090675144922e-06,
+      "device": "cpu"
+    },
+    {
+      "name": "cnn",
+      "seed": 1,
+      "steps": 150,
+      "train_count": 120,
+      "parameters": 166562,
+      "patch_tokens": null,
+      "train_seconds": 2.123173382999994,
+      "clean_accuracy": 1.0,
+      "noisy_accuracy": 1.0,
+      "shifted_accuracy": 1.0,
+      "clean_ce": 0.0,
+      "device": "cpu"
+    },
+    {
+      "name": "cnn",
+      "seed": 2,
+      "steps": 150,
+      "train_count": 120,
+      "parameters": 166562,
+      "patch_tokens": null,
+      "train_seconds": 2.5319918590000725,
+      "clean_accuracy": 1.0,
+      "noisy_accuracy": 0.9921875,
+      "shifted_accuracy": 0.9921875,
+      "clean_ce": 8.475000612406802e-08,
+      "device": "cpu"
+    },
+    {
+      "name": "vit4",
+      "seed": 0,
+      "steps": 150,
+      "train_count": 120,
+      "parameters": 43634,
+      "patch_tokens": 64,
+      "train_seconds": 3.77452356699996,
+      "clean_accuracy": 0.96875,
+      "noisy_accuracy": 0.921875,
+      "shifted_accuracy": 0.671875,
+      "clean_ce": 0.1547827571630478,
+      "device": "cpu"
+    },
+    {
+      "name": "vit4",
+      "seed": 1,
+      "steps": 150,
+      "train_count": 120,
+      "parameters": 43634,
+      "patch_tokens": 64,
+      "train_seconds": 4.338438067000084,
+      "clean_accuracy": 0.9921875,
+      "noisy_accuracy": 0.90625,
+      "shifted_accuracy": 0.5859375,
+      "clean_ce": 0.051012225449085236,
+      "device": "cpu"
+    },
+    {
+      "name": "vit4",
+      "seed": 2,
+      "steps": 150,
+      "train_count": 120,
+      "parameters": 43634,
+      "patch_tokens": 64,
+      "train_seconds": 4.246955834000005,
+      "clean_accuracy": 1.0,
+      "noisy_accuracy": 0.8671875,
+      "shifted_accuracy": 0.578125,
+      "clean_ce": 0.00048161784070543945,
+      "device": "cpu"
+    }
+  ],
+  "summary": {
+    "cnn": {
+      "clean_accuracy": {
+        "mean": 1.0,
+        "sample_std": 0.0
+      },
+      "noisy_accuracy": {
+        "mean": 0.9921875,
+        "sample_std": 0.0078125
+      },
+      "shifted_accuracy": {
+        "mean": 0.9973958333333334,
+        "sample_std": 0.004510548978043951
+      },
+      "train_seconds": {
+        "mean": 2.3608956953333595,
+        "sample_std": 0.21239684400755546
+      }
+    },
+    "vit4": {
+      "clean_accuracy": {
+        "mean": 0.9869791666666666,
+        "sample_std": 0.01626301562082916
+      },
+      "noisy_accuracy": {
+        "mean": 0.8984375,
+        "sample_std": 0.028168369339562415
+      },
+      "shifted_accuracy": {
+        "mean": 0.6119791666666666,
+        "sample_std": 0.052018188425620254
+      },
+      "train_seconds": {
+        "mean": 4.11997248933335,
+        "sample_std": 0.30264412796987367
+      }
+    }
+  }
+}
